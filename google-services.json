@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "104528817325",
+    "firebase_url": "https://reservation-manager-65859.firebaseio.com",
+    "project_id": "reservation-manager-65859",
+    "storage_bucket": "reservation-manager-65859.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104528817325:android:a5eeefdd99f21dff",
+        "android_client_info": {
+          "package_name": "com.thiman.android.reservationmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104528817325-344ka22rcbbgqkda67paqa9gtde9c87e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thiman.android.reservationmanager",
+            "certificate_hash": "46b277abbada0413ca393f6c5dc0e72c5b63d37f"
+          }
+        },
+        {
+          "client_id": "104528817325-hghs76ojcckj7lfrsl4ke8uhq7rco2rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXcoH1JsZr5Wcq7GUV9ULeMqn1bg9Qq6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104528817325-hghs76ojcckj7lfrsl4ke8uhq7rco2rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
