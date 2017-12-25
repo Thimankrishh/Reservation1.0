@@ -30,12 +30,15 @@
 
 
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_phn"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
+                android:hint="@string/phone"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:inputType="textEmailAddress"
+                android:inputType="phone"
+                android:minLines="10"
+                android:text="0714245548"
                 android:textColor="@color/White"
                 app:met_textColorHint="@color/colorPrimary"
 
@@ -63,15 +66,20 @@
 
             >
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_pwd"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:text="Hotel123"
                 app:met_textColorHint="@color/colorPrimary"
                 android:textColor="@color/White"
                 android:inputType="textPassword"
-                android:layout_marginTop="10dp"
+
+
+
+
                 />
         </RelativeLayout>
 
@@ -83,7 +91,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="70dp"
+            android:layout_marginBottom="50dp"
             
 
             >
@@ -96,15 +104,15 @@
      android:fontFamily="@font/chewy_regular"
      android:layout_marginLeft="20dp"
      android:layout_marginRight="20dp"
-     android:textColor="#ffffff"
-     <!--app:shadowColor="@color/Black"-->
+     android:textColor="#ffffff" />
+     <!--app:shadowColor="@color/White"-->
      <!--app:cornerRadius="4dp"-->
      <!--app:shadowEnabled="true"-->
      <!--app:shadowHeight="5dp"-->
 
-     />
+
 >
-<TextView
+<Button
     android:id="@+id/link_to_sign_up"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -115,7 +123,11 @@
     android:layout_marginRight="20dp"
     android:layout_marginTop="20dp"
     android:textSize="20sp"
-     android:layout_marginStart="90dp" android:layout_marginEnd="20dp"/>
+   android:background="@color/Black"
+     android:layout_marginStart="68dp"
+    android:layout_marginEnd="20dp"
+
+    />
 
         </LinearLayout>
 

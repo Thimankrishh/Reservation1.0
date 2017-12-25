@@ -4,5 +4,6 @@
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="phone">Phone Number</string>
     <string name="not_a_member_sign_up_now">Not a member? Sign up now.</string>
 </resources>
