@@ -5,5 +5,7 @@
     <color name="colorAccent">#ad1728</color>
     <color name="Black">#000000</color>
     <color name="White">#ffffff</color>
+    <color name="OverlayBackground">#7f333639</color>
+    <color name="OverlayActionBar">#0e0d0e</color>
     <color name="link_to_sign_up">#000000</color>
 </resources>
