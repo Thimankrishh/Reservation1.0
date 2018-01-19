@@ -66,6 +66,7 @@
                  android:id="@+id/chkout"
                  android:textSize="30sp"
                  android:hint="Check Out"
+
                  android:fontFamily="@font/chewy_regular"
                  android:layout_width="150dp"
                  android:layout_height="50dp"
