@@ -3,7 +3,6 @@
     package="com.thiman.android.reservationmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
@@ -43,15 +48,6 @@
             android:label="@string/title_activity_available_rooms"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".NavigationBar.RoomDetails"
-            android:label="@string/title_activity_room_details"
-            android:parentActivityName=".Home"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thiman.android.reservationmanager.Home" />
-        </activity>
         <activity
             android:name=".NavigationBar.Promotions"
             android:label="@string/title_activity_promotions"
@@ -108,15 +104,6 @@
         <activity
             android:name=".NavigationBar.AboutUs"
             android:label="@string/title_activity_about_us"
-            android:parentActivityName=".Home"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thiman.android.reservationmanager.Home" />
-        </activity>
-        <activity
-            android:name=".NavigationBar.RoomDetails2"
-            android:label="@string/title_activity_room_details2"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme">
             <meta-data
