@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.thiman.android.reservationmanager.NavigationBar.AvailableRooms">
+    tools:context="com.thiman.android.reservationmanager.NavigationBar.Bookings">
 
 
     <!--<android.support.design.widget.AppBarLayout-->
@@ -48,7 +48,7 @@
         <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolBarAr"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways" />
@@ -75,7 +75,7 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:id="@+id/rv_recycler_view_ar"
+        android:id="@+id/rv_recycler_view"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >

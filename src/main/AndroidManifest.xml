@@ -35,20 +35,6 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".NavigationBar.Bookings"
-            android:label="@string/title_activity_bookings"
-            android:parentActivityName=".Home"
-            android:theme="@style/AppTheme">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thiman.android.reservationmanager.Home" />
-        </activity>
-        <activity
-            android:name=".NavigationBar.AvailableRooms"
-            android:label="@string/title_activity_available_rooms"
-            android:parentActivityName=".Home"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".NavigationBar.Promotions"
             android:label="@string/title_activity_promotions"
             android:parentActivityName=".Home"
@@ -109,6 +95,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.thiman.android.reservationmanager.Home" />
+        </activity>
+        <activity
+            android:name=".NavigationBar.Bookings"
+            android:label="Booking Details"
+            android:parentActivityName=".Home" />
+        <activity android:name=".NavigationBar.AvailableRooms"
+            android:parentActivityName=".Home"
+            android:label="Available Rooms">
+
         </activity>
     </application>
 
