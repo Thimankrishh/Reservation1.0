@@ -105,6 +105,12 @@
             android:label="Available Rooms">
 
         </activity>
+        <activity android:name=".NavigationBar.RoomDetails"
+            android:parentActivityName=".Home"
+            android:label="Room Details">
+
+        </activity>
+
     </application>
 
 </manifest>
