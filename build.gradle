@@ -39,5 +39,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.firebaseui:firebase-ui-database:1.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.Hitomis:CircleMenu:v1.1.0'
+    compile 'com.cepheuen.elegant-number-button:lib:1.0.2'
 }
 apply plugin: 'com.google.gms.google-services'

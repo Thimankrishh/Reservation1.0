@@ -3,6 +3,7 @@
     package="com.thiman.android.reservationmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -108,6 +109,12 @@
         <activity android:name=".NavigationBar.RoomDetails"
             android:parentActivityName=".Home"
             android:label="Room Details">
+
+        </activity>
+
+        <activity android:name=".NavigationBar.Share"
+            android:parentActivityName=".Home"
+            android:label="Share">
 
         </activity>
 
