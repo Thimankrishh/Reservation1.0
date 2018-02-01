@@ -31,7 +31,7 @@
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="40dp"
                 >
 
                 <TextView
@@ -39,6 +39,7 @@
                     android:layout_toRightOf ="@+id/iv_imagear"
                     android:layout_width="wrap_content"
                     android:layout_margin="1dp"
+                    android:layout_gravity="center"
                     android:hint="12"
                     android:layout_height="wrap_content"
                     >
@@ -49,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Room Id"
+                    android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:layout_below="@+id/tv_textar"
                     android:layout_toRightOf="@+id/iv_imagear"
@@ -67,15 +69,15 @@
                 android:layout_toRightOf="@id/ll1ar"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="10dp"
 
                 >
 
                 <TextView
                     android:id="@+id/tv_rtar"
                     android:layout_width="wrap_content"
-
-                    android:hint="6"
+                    android:hint="single"
+                    android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     >
                 </TextView>
@@ -104,23 +106,24 @@
                 >
 
                 <TextView
-                    android:id="@+id/tv_pt_ar"
+                    android:id="@+id/tv_l_ar"
                     android:layout_width="wrap_content"
                     android:layout_toRightOf="@id/ll2ar"
                     android:layout_margin="1dp"
-                    android:hint="10$"
+                    android:hint="floor 1"
+
 
                     android:layout_height="wrap_content"
                     >
                 </TextView>
 
                 <TextView
-                    android:id="@+id/tv_pakg_ar"
+                    android:id="@+id/tv_loc_ar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/ll2ar"
                     android:layout_alignBottom="@id/ll2ar"
-                    android:text="Package Type"
+                    android:text="Location"
                     android:layout_margin="5dp">
                     <!--android:layout_toRightOf="@+id/iv_image"-->
                     <!--android:layout_toEndOf="@+id/iv_image">-->

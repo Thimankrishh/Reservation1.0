@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.thiman.android.reservationmanager">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -45,7 +46,7 @@
                 android:value="com.thiman.android.reservationmanager.Home" />
         </activity>
         <activity
-            android:name=".NavigationBar.Reports"
+            android:name=".NavigationBar.ReportsPie"
             android:label="@string/title_activity_reports"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme">
@@ -101,23 +102,28 @@
             android:name=".NavigationBar.Bookings"
             android:label="Booking Details"
             android:parentActivityName=".Home" />
-        <activity android:name=".NavigationBar.AvailableRooms"
-            android:parentActivityName=".Home"
-            android:label="Available Rooms">
-
-        </activity>
-        <activity android:name=".NavigationBar.RoomDetails"
-            android:parentActivityName=".Home"
-            android:label="Room Details">
-
-        </activity>
-
-        <activity android:name=".NavigationBar.Share"
-            android:parentActivityName=".Home"
-            android:label="Share">
-
-        </activity>
-
+        <activity
+            android:name=".NavigationBar.RoomDetails"
+            android:label="Room Details"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".NavigationBar.Reports"
+            android:label="Share"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".NavigationBar.ReportBar"
+            android:label="Reports"
+            android:parentActivityName=".NavigationBar.Reports" />
+        <activity
+            android:name=".JSON.JSONActivity"
+            android:label="Reports"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".NavigationBar.AvailableRooms"
+            android:label="Available Rooms"
+            android:parentActivityName=".Home" />
+        <activity android:name=".NavigationBar.ReportBarBooking" />
+        <activity android:name=".NavigationBar.ReportPieBooking"></activity>
     </application>
 
 </manifest>

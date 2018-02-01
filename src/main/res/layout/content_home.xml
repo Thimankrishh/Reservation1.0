@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/home1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -15,32 +15,25 @@
     <RelativeLayout
         android:id="@+id/home"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="100dp"
+
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-
-
         android:orientation="horizontal"
-        android:background="@color/White"
+        android:background="@color/White">
 
-        android:touchscreenBlocksFocus="true"
-        >
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/Black"
-            >
+            android:background="@color/Black">
 
             <LinearLayout
                 android:id="@+id/l1"
                 android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:orientation="vertical"
-                android:layout_margin="10dp"
-                android:paddingLeft="10dp"
-                >
+                android:layout_margin="10dp">
 
                 <TextView
                     android:id="@+id/chkin"
@@ -51,10 +44,7 @@
                     android:inputType="date"
                     android:fontFamily="@font/chewy_regular"
                     android:textSize="30sp"
-                    android:textColor="@color/Black"
-
-
-                    />
+                    android:textColor="@color/Black" />
                 <info.hoang8f.widget.FButton
                     android:id="@+id/buttonci"
                     android:layout_width="80dp"
@@ -63,8 +53,7 @@
                     android:text="CheckIn"
                     android:background="@color/colorPrimary"
                     android:textSize="15sp"
-                    android:onClick="chkIn"
-                    />
+                    android:onClick="chkIn" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -73,31 +62,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
-            android:background="@color/Black"
-
-            >
+            android:background="@color/Black">
 
             <LinearLayout
                 android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:orientation="vertical"
                 android:layout_margin="10dp"
-                android:layout_toRightOf="@+id/l1"
-                >
+                android:layout_toRightOf="@+id/l1">
 
                 <TextView
                     android:id="@+id/chkout"
                     android:textSize="30sp"
                     android:hint="Check Out"
-
                     android:fontFamily="@font/chewy_regular"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:textColor="@color/Black"
-                    android:layout_toRightOf="@+id/chkin"
-                    android:layout_marginLeft="10dp"
-
-                    />
+                    android:layout_toRightOf="@+id/chkin" />
 
 
 
@@ -125,23 +107,20 @@
     <LinearLayout
         android:id="@+id/ll2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:onClick="select"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
-        android:background="@color/White"
-        >
+        android:background="@color/White">
 
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="90dp"
@@ -152,9 +131,7 @@
                 android:textColor="@color/Black"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="25dp"
-
-                />
+                android:layout_marginLeft="25dp" />
             <!--<TextView-->
             <!--android:id="@+id/rooms"-->
             <!--android:layout_width="50dp"-->
@@ -176,15 +153,7 @@
                 android:textAlignment="center"
                 android:layout_marginLeft="30dp"
                 android:solidColor="@color/colorPrimary"
-                android:pointerIcon="arrow"
-
-
-                >
-
-
-            </TextView>
-
-
+                android:pointerIcon="arrow"/>
 
         </LinearLayout>
 
@@ -193,7 +162,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
@@ -241,7 +210,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
@@ -290,8 +259,51 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="20dp"
-        >
+        android:layout_margin="20dp">
+        <RadioGroup
+            android:id="@+id/radiogrp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Type"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package Type"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp" />
+            <RadioButton
+                android:id="@+id/radio_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_gravity="center" />
+
+        </RadioGroup>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -302,54 +314,16 @@
                 android:textSize="20dp"
                 android:layout_gravity="center"
                 android:id="@+id/rt"
+                android:text="Room Type" />
 
-                android:text="Room Type"
-                />
 
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:text="Single"-->
-                <!--/>-->
-            <!--<CheckBox-->
-                <!--android:id="@+id/c1"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--/>-->
 
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:text="Double"-->
-                <!--/>-->
-            <!--<CheckBox-->
-                <!--android:id="@+id/c2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:text="DoubleD"-->
-                <!--/>-->
-            <!--<CheckBox-->
-                <!--android:id="@+id/c3"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp"/>-->
 
 <Spinner
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:id="@+id/rType"
-    >
+    android:id="@+id/rType">
 
 </Spinner>
 
@@ -358,62 +332,6 @@
 
     </android.support.v7.widget.CardView>
 
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:layout_margin="20dp">-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-
-            <!--<TextView-->
-                <!--android:id="@+id/rt2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp"-->
-                <!--android:text="             " />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp"-->
-                <!--android:text="Cabana " />-->
-
-            <!--<CheckBox-->
-                <!--android:id="@+id/c4"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp"-->
-                <!--android:text="Twin" />-->
-
-            <!--<CheckBox-->
-                <!--android:id="@+id/c5"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp" />-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp"-->
-                <!--android:text="Parlor" />-->
-
-            <!--<CheckBox-->
-                <!--android:id="@+id/c6"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="5dp" />-->
-
-
-        <!--</LinearLayout>-->
-
-    <!--</android.support.v7.widget.CardView>-->
 
 
 
@@ -421,15 +339,13 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_margin="20dp"
-            >
+            android:layout_margin="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -440,65 +356,15 @@
                     android:textSize="20sp"
                     android:layout_gravity="center"
                     android:id="@+id/pt"
-                    android:text="Package Type"
-                    />
+                    android:text="Package Type" />
 
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:text="Gold"-->
-                    <!--/>-->
-                <!--<CheckBox-->
-                    <!--android:id="@+id/c7"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:text="Silver"-->
-                    <!--/>-->
-                <!--<CheckBox-->
-                    <!--android:id="@+id/c8"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--/>-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:text="Platinum"-->
-                    <!--/>-->
-                <!--<CheckBox-->
-                    <!--android:id="@+id/c9"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_margin="5dp"/>-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:text="Normal"-->
-                    <!--/>-->
-                <!--<CheckBox-->
-                    <!--android:id="@+id/c10"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_margin="5dp"/>-->
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:id="@+id/pType"
-            android:textAlignment="center"
-            >
+            android:textAlignment="center">
 
 
         </Spinner>
@@ -524,9 +390,10 @@
         android:layout_height="50dp"
         android:gravity="center"
         android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:text="Search"
-        android:fontFamily="@font/chewy_regular"
-        />
+        android:fontFamily="@font/chewy_regular" />
 
 </LinearLayout>
 
