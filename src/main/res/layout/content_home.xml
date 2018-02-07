@@ -15,18 +15,14 @@
     <RelativeLayout
         android:id="@+id/home"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-
+        android:layout_height="80dp"
         android:layout_marginTop="10dp"
+        android:background="#007ac1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
-        android:background="@color/White">
+        >
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/Black">
 
             <LinearLayout
                 android:id="@+id/l1"
@@ -37,14 +33,17 @@
 
                 <TextView
                     android:id="@+id/chkin"
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
                     android:hint="Check In"
+                    android:textColorHint="@color/White"
+                    android:textAlignment="center"
                     android:inputType="date"
                     android:fontFamily="@font/chewy_regular"
                     android:textSize="30sp"
-                    android:textColor="@color/Black" />
+                    android:textColor="@color/White" />
                 <info.hoang8f.widget.FButton
                     android:id="@+id/buttonci"
                     android:layout_width="80dp"
@@ -53,16 +52,13 @@
                     android:text="CheckIn"
                     android:background="@color/colorPrimary"
                     android:textSize="15sp"
+                    android:layout_marginBottom="5dp"
                     android:onClick="chkIn" />
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:background="@color/Black">
+
+
 
             <LinearLayout
                 android:layout_width="150dp"
@@ -74,11 +70,13 @@
                 <TextView
                     android:id="@+id/chkout"
                     android:textSize="30sp"
+                    android:textAlignment="center"
                     android:hint="Check Out"
+                    android:textColorHint="@color/White"
                     android:fontFamily="@font/chewy_regular"
                     android:layout_width="150dp"
-                    android:layout_height="50dp"
-                    android:textColor="@color/Black"
+                    android:layout_height="35dp"
+                    android:textColor="@color/White"
                     android:layout_toRightOf="@+id/chkin" />
 
 
@@ -94,10 +92,11 @@
                     android:layout_marginLeft="30sp"
                     android:text="CheckOut"
                     android:onClick="chkout"
+                    android:layout_marginBottom="5dp"
                     android:textSize="15sp" />
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+
 
 
     </RelativeLayout>
@@ -113,7 +112,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="horizontal"
-        android:background="@color/White">
+        android:background="#007ac1">
 
 
         <LinearLayout
@@ -124,36 +123,27 @@
 
             <TextView
                 android:layout_width="90dp"
-                android:layout_height="30dp"
-                android:text="Rooms"
-                android:fontFamily="@font/chewy_regular"
-                android:textSize="20sp"
-                android:textColor="@color/Black"
-                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="25dp" />
-            <!--<TextView-->
-            <!--android:id="@+id/rooms"-->
-            <!--android:layout_width="50dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:layout_marginLeft="35dp"-->
-            <!--android:text="1"-->
-            <!--android:fontFamily="@font/chewy_regular"-->
-            <!--android:textStyle="italic"-->
-            <!--android:textSize="30sp"-->
-            <!--android:textColor="@color/colorPrimary"-->
+                android:fontFamily="@font/chewy_regular"
+                android:text="Rooms"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-            <!--/>-->
 
             <TextView
                 android:id="@+id/room"
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:hint="1"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
                 android:textAlignment="center"
-                android:layout_marginLeft="30dp"
-                android:solidColor="@color/colorPrimary"
-                android:pointerIcon="arrow"/>
+                android:solidColor="@color/colorPrimary" />
 
         </LinearLayout>
 
@@ -168,14 +158,14 @@
 
             <TextView
                 android:layout_width="90dp"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:text="Adults"
                 android:textSize="20sp"
-                android:textColor="@color/Black"
+                android:textColor="@color/White"
                 android:textStyle="bold"
                 android:fontFamily="@font/chewy_regular"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="30dp"
 
                 />
             <!--<TextView-->
@@ -195,10 +185,13 @@
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:hint="2"
+                android:textStyle="bold"
+                android:layout_gravity="center"
                 android:textAlignment="center"
-                android:layout_marginLeft="30dp"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
                 android:solidColor="@color/colorPrimary"
-                android:pointerIcon="arrow"
+
 
                 />
 
@@ -216,11 +209,12 @@
 
             <TextView
                 android:layout_width="90dp"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:text="Children"
                 android:fontFamily="@font/chewy_regular"
                 android:textSize="20sp"
-                android:textColor="@color/Black"
+                android:textColor="@color/White"
+                android:textAlignment="center"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
@@ -243,8 +237,11 @@
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:hint="1"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:layout_marginLeft="25dp"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
                 android:solidColor="@color/colorPrimary"
 
                 />
@@ -259,7 +256,14 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="20dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#007ac1"
+            android:layout_height="match_parent">
         <RadioGroup
             android:id="@+id/radiogrp"
             android:layout_width="match_parent"
@@ -271,8 +275,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Room Type"
+                android:fontFamily="@font/chewy_regular"
+                android:textColor="@color/White"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="15dp"
                 android:textSize="20sp" />
 
             <RadioButton
@@ -286,6 +292,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Package Type"
+                android:fontFamily="@font/chewy_regular"
+                android:textColor="@color/White"
                 android:layout_gravity="center"
                 android:textSize="20sp"
                 android:layout_marginLeft="20dp" />
@@ -297,21 +305,27 @@
                 android:layout_gravity="center" />
 
         </RadioGroup>
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="20dp">
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
         <LinearLayout
             android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
             android:layout_height="match_parent">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:textSize="20dp"
+                android:fontFamily="@font/chewy_regular"
+                android:textColor="@color/Black"
                 android:layout_gravity="center"
                 android:id="@+id/rt"
                 android:text="Room Type" />
@@ -320,9 +334,10 @@
 
 
 <Spinner
-    android:layout_width="match_parent"
+    android:layout_width="100dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
+    android:layout_marginLeft="50dp"
     android:id="@+id/rType">
 
 </Spinner>
@@ -337,7 +352,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
@@ -345,24 +360,31 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_margin="20dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
                 android:layout_height="match_parent">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_marginLeft="15dp"
                     android:textSize="20sp"
                     android:layout_gravity="center"
                     android:id="@+id/pt"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/chewy_regular"
+                    android:textColor="@color/Black"
                     android:text="Package Type" />
 
 
         <Spinner
-            android:layout_width="match_parent"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
             android:id="@+id/pType"
             android:textAlignment="center">
 
@@ -373,26 +395,87 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <!--<info.hoang8f.widget.FButton-->
-        <!--android:id="@+id/search1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:layout_marginRight="40dp"-->
-        <!--android:text="Search"-->
-        <!--android:fontFamily="@font/chewy_regular"-->
-        <!--/>-->
+
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/chewy_regular"
+                    android:textColor="@color/Black"
+
+                    android:id="@+id/p"
+                    android:text="EID" />
+
+                <EditText
+                    android:id="@+id/eid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="NIC"
+                    android:fontFamily="@font/chewy_regular"
+                    android:textColor="@color/Black"
+                    android:layout_marginLeft="20dp" />
+                <EditText
+                    android:id="@+id/nic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:hint="932081806v"
+                    android:textSize="20dp"
+                    android:inputType="number|text"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
 
     <info.hoang8f.widget.FButton
         android:id="@+id/search1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:text="Search"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:fontFamily="@font/chewy_regular" />
 
 </LinearLayout>

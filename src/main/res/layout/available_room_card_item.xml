@@ -15,6 +15,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#007ac1"
             >
 
             <ImageView
@@ -27,48 +28,57 @@
 
 
             <LinearLayout
-                android:id="@+id/ll1ar"
+                android:id="@+id/ll1"
                 android:layout_width="70dp"
+                android:background="@color/colorPrimary"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="50dp"
                 >
 
                 <TextView
                     android:id="@+id/tv_text_rnar"
-                    android:layout_toRightOf ="@+id/iv_imagear"
+                    android:layout_toRightOf ="@+id/iv_image"
                     android:layout_width="wrap_content"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
                     android:layout_gravity="center"
+                    android:textAlignment="center"
                     android:hint="12"
+                    android:textColor="@color/White"
                     android:layout_height="wrap_content"
                     >
                 </TextView>
 
                 <TextView
-                    android:id="@+id/tv_book_rnoar"
+                    android:id="@+id/tv_book_rno"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Room Id"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:layout_below="@+id/tv_textar"
-                    android:layout_toRightOf="@+id/iv_imagear"
-                    android:layout_toEndOf="@+id/iv_imagear">
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:layout_below="@+id/tv_text"
+                    android:layout_toRightOf="@+id/iv_image"
+                    android:layout_toEndOf="@+id/iv_image">
                 </TextView>
 
 
 
             </LinearLayout>
 
-
-
             <LinearLayout
-                android:id="@+id/ll2ar"
-                android:layout_width="80dp"
-                android:layout_toRightOf="@id/ll1ar"
+                android:id="@+id/ll2"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@id/ll1"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:background="@color/colorPrimary"
                 android:layout_marginLeft="10dp"
 
                 >
@@ -76,18 +86,27 @@
                 <TextView
                     android:id="@+id/tv_rtar"
                     android:layout_width="wrap_content"
-                    android:hint="single"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Single"
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
+                    android:layout_marginTop="5dp"
                     android:layout_gravity="center"
                     android:layout_height="wrap_content"
                     >
                 </TextView>
 
                 <TextView
-                    android:id="@+id/tv_rt_ar"
+                    android:id="@+id/tv_check_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Room Type "
-                    android:layout_margin="4dp">
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
                     <!--android:layout_toRightOf="@+id/iv_image"-->
                     <!--android:layout_toEndOf="@+id/iv_image">-->
                 </TextView>
@@ -95,36 +114,44 @@
 
             </LinearLayout>
 
-
             <LinearLayout
-                android:id="@+id/ll3ar"
-                android:layout_width="match_parent"
-                android:layout_toRightOf="@id/ll2ar"
+                android:id="@+id/ll3"
+                android:layout_width="100dp"
+                android:layout_toRightOf="@id/ll2"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:background="@color/colorPrimary"
                 android:layout_marginLeft="10dp"
                 >
 
                 <TextView
                     android:id="@+id/tv_l_ar"
                     android:layout_width="wrap_content"
-                    android:layout_toRightOf="@id/ll2ar"
-                    android:layout_margin="1dp"
-                    android:hint="floor 1"
-
-
+                    android:layout_toRightOf="@id/ll2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="First Floor"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
                     android:layout_height="wrap_content"
                     >
                 </TextView>
 
                 <TextView
-                    android:id="@+id/tv_loc_ar"
+                    android:id="@+id/tv_checko_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/ll2ar"
-                    android:layout_alignBottom="@id/ll2ar"
+                    android:layout_toRightOf="@id/ll2"
+                    android:layout_alignBottom="@id/ll2"
                     android:text="Location"
-                    android:layout_margin="5dp">
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
                     <!--android:layout_toRightOf="@+id/iv_image"-->
                     <!--android:layout_toEndOf="@+id/iv_image">-->
                 </TextView>

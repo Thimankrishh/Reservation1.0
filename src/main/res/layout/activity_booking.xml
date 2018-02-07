@@ -27,6 +27,7 @@
             android:fitsSystemWindows="true">
 
             <ImageView
+                android:id="@+id/bed"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:padding="10dp"
@@ -51,7 +52,22 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="@color/Black"
+            android:animateLayoutChanges="true">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/chewy_regular"
+            android:textSize="32sp"
+            android:textColor="@color/White"
+            android:text="Booking Details"/>
+
+
+        </android.support.v7.widget.Toolbar>
 
         <!--<android.support.design.widget.TabLayout-->
         <!--android:id="@+id/tab_layout"-->
@@ -76,6 +92,7 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/rv_recycler_view"
+        android:background="#03A9F4"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >

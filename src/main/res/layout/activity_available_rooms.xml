@@ -51,20 +51,22 @@
             android:id="@+id/toolBarAr"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            android:background="@color/Black"
+            app:layout_scrollFlags="scroll|enterAlways">
 
-        <!--<android.support.design.widget.TabLayout-->
-        <!--android:id="@+id/tab_layout"-->
-        <!--app:tabMode="fixed"-->
-        <!--android:layout_below="@+id/toolbar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:background="?attr/colorPrimary"-->
-        <!--android:elevation="6dp"-->
-        <!--app:tabTextColor="#d3d3d3"-->
-        <!--app:tabSelectedTextColor="#ffffff"-->
-        <!--app:tabIndicatorColor="#ff00ff"-->
-        <!--android:minHeight="?attr/actionBarSize" />-->
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/chewy_regular"
+            android:textSize="32sp"
+            android:textColor="@color/White"
+            android:text="Available Rooms"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
 
 
 
@@ -77,6 +79,8 @@
         android:layout_width="match_parent"
         android:id="@+id/rv_recycler_view_ar"
         android:layout_height="match_parent"
+        android:background="#03A9F4"
+        android:layoutAnimation="@anim/layout_animation_slide_right"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
 
