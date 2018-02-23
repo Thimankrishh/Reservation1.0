@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/White"
     android:layout_height="match_parent"
-    tools:context="com.thiman.android.reservationmanager.NavigationBar.ReportsPie">
+    tools:context="com.thiman.android.reservationmanager.ReportCharts.ReportsPie">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

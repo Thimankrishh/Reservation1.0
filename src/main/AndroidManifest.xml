@@ -46,7 +46,7 @@
                 android:value="com.thiman.android.reservationmanager.Home" />
         </activity>
         <activity
-            android:name=".NavigationBar.ReportsPie"
+            android:name=".ReportCharts.ReportsPie"
             android:label="@string/title_activity_reports"
             android:parentActivityName=".Home"
             android:theme="@style/AppTheme">
@@ -111,7 +111,7 @@
             android:label="Share"
             android:parentActivityName=".Home" />
         <activity
-            android:name=".NavigationBar.ReportBar"
+            android:name=".ReportCharts.ReportBar"
             android:label="Reports"
             android:parentActivityName=".NavigationBar.Reports" />
         <activity
@@ -122,8 +122,8 @@
             android:name=".NavigationBar.AvailableRooms"
             android:label="Available Rooms"
             android:parentActivityName=".Home" />
-        <activity android:name=".NavigationBar.ReportBarBooking" />
-        <activity android:name=".NavigationBar.ReportPieBooking"></activity>
+        <activity android:name=".ReportCharts.ReportBarBooking" />
+        <activity android:name=".ReportCharts.ReportPieBooking"></activity>
     </application>
 
 </manifest>

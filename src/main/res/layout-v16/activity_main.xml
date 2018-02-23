@@ -39,7 +39,7 @@
                 android:layout_marginRight="20dp"
                 android:inputType="text"
                 android:minLines="10"
-                android:text="adminnew"
+                android:text="owner"
                 android:textColor="@color/White"
                 app:met_textColorHint="@color/colorPrimary"
 
